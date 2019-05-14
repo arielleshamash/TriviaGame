@@ -1,0 +1,86 @@
+body {
+    background-color: maroon;
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: gold;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 55px;
+
+}
+
+h4 {
+    margin-bottom: 20px;
+    color: gold;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+
+}
+
+#startButton {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#endButton {
+    font-size: 24px;
+    margin-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#timer {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: gold;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+#resultsPage {
+    color: gold;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+
+}
+
+#quizQuestions {
+    color: gold;
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#questionTitle {
+    font-weight: 500;
+    margin-top: 32px;
+    font-size: 20px;
+}
+
+#correct {
+    margin-top: 32px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#incorrect {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#unanswered {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#hp {
+    padding-top: 20px;
+    width: 600px;
+}
+
+
+

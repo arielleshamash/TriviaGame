@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Harry Potter Trivia</title>
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS file link-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+    
+
+</head>
+<body>
+    <!--html for main page container and start button-->
+    <div class="container text-center" id="game">
+        <img src="assets/images/Harry_Potter_logo_text.png" class="img-fluid text-center" id="hp">
+        <h1>Harry Potter Trivia!</h1>
+        
+        <!--time remaining-->
+        <h2 id="timer"></h2>
+        <!--question array section-->
+        <main id="quizQuestions" class="block">
+
+        <div id="startPage">    
+        <h4>Test your Harry Potter knowledge. Press Start to begin!</h4>
+        <!--start button-->    
+        <button type="button" class="btn btn-outline-warning" id="startButton">Start</button>
+        </div>
+    </div>    
+        <!--results section-->
+        <div class="container text-center" id="resultsPage">
+                <h2>Results:</h2>
+                <p id="correct"></p>
+                <p id="incorrect"></p>
+                <p id="unanswered"></p>
+        </div>
+       
+
+<!--jQuery link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>         
+<!--Javascript file link-->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+
+</html>
