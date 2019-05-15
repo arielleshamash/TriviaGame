@@ -6,6 +6,7 @@ $(document).ready(function(){
     $("#startButton").on("click", playGame.startTimer);
 });    
 
+var timeFunction;
 
 //playing the game
 var playGame = {
@@ -16,7 +17,7 @@ var playGame = {
     //start timer, hide start button, display questions page
     startTimer: function() {
         $("#timer").text("Time remaining: " + playGame.timeRemaining);
-        setInterval(playGame.countDown, 1000);
+        timeFunction= setInterval(playGame.countDown, 1000);
         $("#startPage").hide();
         trivia.displayQuestions();
     },
@@ -25,7 +26,7 @@ var playGame = {
     countDown: function() {
         playGame.timeRemaining--;
         $("#timer").text("Time remaining: " + playGame.timeRemaining);
-            if (playGame.timeRemaining < 1) {
+            if (playGame.timeRemaining <= 0) {
                 playGame.stopTimer();
                 $("#timer").empty();
             }
@@ -33,7 +34,7 @@ var playGame = {
 
     //stop timer, check answers
     stopTimer: function () {
-        clearInterval();
+        clearInterval(timeFunction);
         trivia.scoreAnswers();
     },
 
@@ -100,7 +101,8 @@ var trivia = {
             }
             else if (userAnswer !== rightAnswer) {
                 wrong++;
-            }
+            } 
+            
         }
     
 
